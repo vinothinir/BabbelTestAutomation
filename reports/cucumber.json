@@ -1,0 +1,126 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Launching HomePage",
+        "description": "",
+        "id": "homepage-verification;launching-homepage",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14591195257,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I launch the website",
+            "match": {
+              "location": "homePageSteps.homePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 116962999,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I can see the option for login and register",
+            "match": {
+              "location": "homePageSteps.homePageVerification()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1208110669,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I verify the logo Babbel",
+            "match": {
+              "location": "homePageSteps.homeLogoVerification()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "HomePage Verification",
+    "description": "",
+    "id": "homepage-verification",
+    "keyword": "Feature",
+    "uri": "homePage.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Login Page",
+        "description": "",
+        "id": "loginpage-verification;login-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10903086134,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I launch the Babbel login page",
+            "match": {
+              "location": "loginPageSteps.homePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 206833669,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I verify the login screen",
+            "match": {
+              "location": "loginPageSteps.loginScreenVerification()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 948831354,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter invalid credentials to login",
+            "match": {
+              "location": "loginPageSteps.loginCheck()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1216652938,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I Verify the error message",
+            "match": {
+              "location": "loginPageSteps.loginFailedVerification()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "LoginPage Verification",
+    "description": "",
+    "id": "loginpage-verification",
+    "keyword": "Feature",
+    "uri": "loginPage.feature"
+  }
+]
